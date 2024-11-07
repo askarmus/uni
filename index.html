@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="https://th.bing.com/th/id/OIP.28MZlb991HobqwOkwNcN8AHaLH?rs=1&pid=ImgDetMain" alt="My Photo" width="150" height="150">
+
+        <h2>About Me</h2>
+        <p>Introduce yourself here!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>List your projects here!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <!-- Name field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            
+            <!-- Email field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <!-- Mobile number field -->
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+            <br><br>
+            
+            <!-- Message field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <br><br>
+            
+            <!-- Submit button -->
+            <input type="submit" value="Submit" class="submit-btn">
+
+          </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
